@@ -119,9 +119,9 @@ class InfobloxService:
         if recordType == 'a' or recordType == 'A':
             return 'ipv4addr'
         elif recordType == 'cname' or recordType == 'CNAME':
-            return ''
+            return 'canonical'
         elif recordType == 'mx' or recordType == 'MX':
-            return ''
+            return 'mail_exchanger'
         elif recordType == 'ns' or recordType == 'NS':
             return ''
         elif recordType == 'txt' or recordType == 'TXT':
@@ -135,9 +135,9 @@ class InfobloxService:
         if recordType == 'a' or recordType == 'A':
             return 'name'
         elif recordType == 'cname' or recordType == 'CNAME':
-            return ''
+            return 'canonical'
         elif recordType == 'mx' or recordType == 'MX':
-            return ''
+            return 'mail_exchanger'
         elif recordType == 'ns' or recordType == 'NS':
             return ''
         elif recordType == 'txt' or recordType == 'TXT':
