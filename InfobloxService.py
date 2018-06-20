@@ -9,7 +9,7 @@ class InfobloxService:
         '''
         Initializes the InfobloxService object
 
-        :param str url: The url of the infoblox API to call Ex. dns.evertecinc.com/wapi/2.7.1/
+        :param str url: The url of the infoblox API to call Ex. <Infoblox_Address>/wapi/2.7.1/
         '''
         self.__disableWarnings()
         self.url = url
