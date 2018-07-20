@@ -20,6 +20,10 @@ class InfobloxService:
 
     def getObjectReference(self, recordType, record):
         '''
+        Returns the reference of the found object
+
+        :param str recordType: Specifies the type of record to search for
+        :param str record: The domian to search 
         '''
 
         parameter = self.__getParameter(recordType)
@@ -47,7 +51,8 @@ class InfobloxService:
     
 
     def createZone(self, view, domain, dnsGroup):
-
+        '''
+        '''
         params = {}
         params['fqdn'] = domain
         params['view'] = view
